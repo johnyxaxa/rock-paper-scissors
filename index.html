@@ -37,8 +37,26 @@
 // Part II (Getting the choice from human/player)
 
         function getHumanChoice() {
+           let humanChoice = prompt("Choose a move from : Rock, Paper or Scissors");
+           return humanChoice.toLowerCase();
+        }
+
+// Part III (Score Counter)
+
+        let humanScore = 0;
+        let computerScore = 0;
+
+// Part IV (Round)
+
+        function playRound(humanChoice, computerChoice) {
             
         }
+
+        const humanSelection = getHumanChoice();
+        const computerSelection = getComputerChoice();
+
+        playRound(humanSelection, computerSelection);
+
     </script>
 </body>
 </html>
