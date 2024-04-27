@@ -49,7 +49,45 @@
 // Part IV (Round)
 
         function playRound(humanChoice, computerChoice) {
+           
+            if(humanChoice===computerChoice){
+                return "It's Draw";
+            } 
+
+            if (humanChoice==="paper" && computerChoice==="rock") {
+
+                humanScore++;
+
+                return "You win! Paper beats Rock!";
+                
+                
+            } 
+
+            if (humanChoice==="rock" && computerChoice==="paper") {
+                return "You lose! Paper beats Rock!";
+                
+            } 
+
+            if (humanChoice==="scissors" && computerChoice==="rock") {
+                return "You lose! Rock beats Scissors!";
+                
+            } 
+
+            if (humanChoice==="rock" && computerChoice==="scissors") {
+                return "You win! Rock beats Scissors!";
             
+            } 
+
+            if (humanChoice==="paper" && computerChoice==="scissors") {
+                return "You lose! Scissors beat Paper!";
+                
+            } 
+
+            if (humanChoice==="scissors" && computerChoice==="paper") {
+                return "You win! Scissors beat Paper!";
+                
+            } 
+
         }
 
         const humanSelection = getHumanChoice();
