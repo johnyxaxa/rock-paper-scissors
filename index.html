@@ -20,11 +20,16 @@
     <script>
         function getComputerChoice(max) {
             max = 3;
-            return randomNumber = Math.floor(Math.random() * max);
+            randomNumber = Math.floor(Math.random() * max);
+            
+            if (randomNumber<1){
+                return "rock";
+            } else if (randomNumber>1){
+                return "paper";
+            } else {
+                return "scissors";
+            }
         }
-
-        console.log(getComputerChoice());
-
     </script>
 </body>
 </html>
